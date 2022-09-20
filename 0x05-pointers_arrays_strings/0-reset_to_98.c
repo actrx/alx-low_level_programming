@@ -7,7 +7,7 @@
  *
  * Return: Resets to 98.
  */
-int reset_to_98(*p)
+reset_to_98(int *p)
 {
 	*p = 98;
 }
