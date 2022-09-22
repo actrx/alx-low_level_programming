@@ -1,14 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * reset_to_98 - Resets to 98.
- * @p: Pointer
+ * reset_to_98 - updates the value of n to 98
+ * @n: integer pointer to a variable to be updated
  *
- *
- * Return: Resets to 98.
+ * Return: nothing
  */
 
-void reset_to_98(int *p)
+void reset_to_98(int *n)
 {
-	*p = 98;
+	*n = 98;
 }

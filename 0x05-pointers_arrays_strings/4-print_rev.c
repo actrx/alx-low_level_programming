@@ -1,26 +1,18 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 /**
- * print_rev - prints str in rev
- *
- * @str: pointer
- *
- *
- *
- *
+ * print_rev - prints a string in reverse
+ * @s: the used string reference pointer
+ * Return: 0
  */
-void print_rev(char *str)
-{
-	int y = strlen(str) - 1;
 
-	while (y != -1)
-		printf("%c", str[y--]);
-}  
-
-int main()
+void print_rev(char *s)
 {
-	char *str = "Hello, world.";
-	print_rev(str);
-	return (0);
+	int i = 0;
+
+	while (s[i])
+		i++;
+	while (i--)
+		_putchar(s[i]);
+	_putchar('\n');
 }

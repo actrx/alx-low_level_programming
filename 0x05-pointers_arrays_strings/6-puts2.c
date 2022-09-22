@@ -1,30 +1,21 @@
-#include <stdio.h>
-#include <string.h>
+#include"main.h"
 
 /**
- * puts2 - reverse string
- * @s: pointer
+ * puts2 - prints every character of a string
  *
+ * @str: string parameter input
  *
- *
- */
-void puts2(char *s)
+ * Return: Noting
+*/
+
+void puts2(char *str)
 {
 	int i;
-	int j;
-	j = strlen(s);
-	for (i=0;  i < j; i += 2)
+
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		putchar(s[i]);
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
-
-}
-
-int main(void)
-{
-	char *str;
-
-	str = "0123456789";
-	puts2(str);
-	return (0);
+	_putchar('\n');
 }
