@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * main - check the code
+ * _strspn - check the code
  *
  * @s: bytes from accept
  * @accept: pointer
@@ -14,6 +14,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n;
+
 	n = strspn(s, accept);
 	return (n);
 }
