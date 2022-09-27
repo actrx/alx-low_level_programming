@@ -23,7 +23,7 @@ void print_chessboard(char (*a)[8])
 		if (i == 7)
 			continue;
 		{
-			printf("\n");
+			_putchar("\n");
 		}
 	}
 }
