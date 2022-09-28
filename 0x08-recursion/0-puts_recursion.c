@@ -1,15 +1,18 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * 
- * _puts_recursion - prints char 
- * @s: string pointer 
+ * _puts_recursion - print a string followed by a new line recursively
+ *
+ * @s: string to print
  *
  */
-
-
 void _puts_recursion(char *s)
 {
-	 _putchar(*s);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(++s);
 }
-
