@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
-* main - Write a program that multiplies two numbers.
-*
-* @argc: count
-* @argv: vector
-*
-* Return: 1 or 0
-*
-*/
-
-int main(int argc, char *argv[])
+ * main - Entry point
+ *
+ * @argc: argument count
+ * @argv: arguments as array of strings
+ *
+ * Description: print the name of the program
+ *
+ * Return: 0 (success)
+ */
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	printf("%s", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }

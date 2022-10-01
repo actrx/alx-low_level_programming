@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 /**
-* main - prints the minimum number of coins
-*
-* @argc: count arg
-* @argv: pointer to pointer arg vector, array.
-*
-* Return: 0
-*/
-
-int main(int argc, char **argv)
+ * main - Entry point
+ *
+ * @argc: argument count
+ * @argv: arguments as array of strings
+ *
+ * Description: print the number of arguments
+ *
+ * Return: 0 (success)
+ */
+int main(int argc, char __attribute__((unused)) *argv[])
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
