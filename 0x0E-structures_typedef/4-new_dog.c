@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "dog.h"
 
+char *_strdup(char *str);
+
 /**
  * dog_t *new_dog - check the code
  * @name: pointer to name
