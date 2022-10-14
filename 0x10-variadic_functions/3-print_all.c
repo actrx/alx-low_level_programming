@@ -22,12 +22,11 @@ void print_string(va_list list);
 void print_all(const char *const format, ...)
 {
 	p_type print[] = {
-		{ 'c', print_char },
-		{ 'i', print_int },
-		{ 'f', print_float },
-		{ 's', print_string },
-		{ 0, NULL }
-	};
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{0, NULL}};
 	va_list list;
 	int i, j;
 	char *sep = "";
