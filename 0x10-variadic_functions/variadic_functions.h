@@ -2,8 +2,8 @@
 #define __VARIADIC_FUNCTIONS_H_
 typedef struct print_types
 {
-    char arg;
-    void (*print_func)(va_list);
+	char arg;
+	void (*print_func)(va_list);
 } p_type;
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
